@@ -266,4 +266,18 @@ recipes.addShaped(<tconstruct:rack>.withTag({textureBlock: {id: "minecraft:woode
 	]
 );
 
+	#Fix Zinc Grains being useless
+recipes.addShapeless(<railcraft:ingot:8>,
+	[<extrabees:misc:14>]
+);
+
+	#Fix Mossy Stone Brick Stair recipe
+recipes.addShaped(<quark:stonebrick_mossy_stairs> * 4,
+	[
+		[<minecraft:stonebrick:1>, null, null], 
+		[<minecraft:stonebrick:1>, <minecraft:stonebrick:1>, null], 
+		[null, null, null]
+	]
+);
+
 print("Initialized 'recipe_changes.zs'");
